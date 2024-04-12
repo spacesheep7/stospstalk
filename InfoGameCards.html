@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/barraNav.css">
+    <link rel="stylesheet" href="Estilos/infoGameCards.css">
+    <title>STOPSTALK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>INFORMACION</h2>
+    </div>
+    <nav>
+        <div class="menu-toggle">☰</div>
+        <ul >
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="InfoGameCards.html">Informacion</a></li>
+            <li><a href="Recom.html">Recomendaciones</a></li>
+        </ul>
+    </nav>
+    <section class="game-rules">
+        <div class="txt-container">
+            <h1>Como Funciona?</h1>
+            <p>Una vez iniciado el juego debes seleccionar 2 cartas, si estas son iguales permaneceran volteadas hacia arriba, si no son iguales volveran a voltearse hacia abajo, ganaras una vez que todas las cartas esten volteadas hacia arriba.</p>
+            <p>Ademas, por cada par de cartas iguales que voltees, revelaran informacion referente a dicha carta en la parte inferior de la pagina!</p>
+        </div>
+    </section>
+    <section class="game">
+        <div class="wrapper">
+            <div class="stats-container">
+              <div id="moves-count"></div>
+              <div id="time"></div>
+            </div>
+            <div class="game-container"></div>
+            <button id="stop" class="hide">Stop Game</button>
+          </div>
+          <div class="controls-container">
+            <p id="result"></p>
+            <button id="start">Start Game</button>
+          </div>
+    </section>
+    <section class="infoCards">
+        <div class="info-container">
+            <div class="title-cards-info">Informacion De Las Cartas</div>
+            <div class="fila-info-card" data-card-value="definicion-card">
+                <div class="image-container">
+                    <img src="Recursos/img/definicion-card.jpg" alt="">
+                </div>
+                <div class="txt-container">
+                    <h1>???</h1>
+                    <p>???</p>
+                </div>
+            </div>
+            <div class="fila-info-card" data-card-value="agresor-card">
+                <div class="image-container">
+                    <img src="Recursos/img/agresor-card.jpg" alt="">
+                </div>
+                <div class="txt-container">
+                    <h1>???</h1>
+                    <p>???</p>
+                </div>
+            </div>
+            <div class="fila-info-card" data-card-value="victima-card">
+                <div class="image-container">
+                    <img src="Recursos/img/victima-card.jpg" alt="">
+                </div>
+                <div class="txt-container">
+                    <h1>???</h1>
+                    <p>???</p>
+                </div>
+            </div>
+            <div class="fila-info-card" data-card-value="sintomas-card">
+                <div class="image-container">
+                    <img src="Recursos/img/sintomas-card.jpg" alt="">
+                </div>
+                <div class="txt-container">
+                    <h1>???</h1>
+                    <p>???</p>
+                </div>
+            </div>
+            <div class="fila-info-card" data-card-value="transtornos-card">
+                <div class="image-container">
+                    <img src="Recursos/img/transtornos-card.jpg" alt="">
+                </div>
+                <div class="txt-container">
+                    <h1>???</h1>
+                    <p>???</p>
+                </div>
+            </div>
+            <div class="fila-info-card" data-card-value="ayuda-card">
+                <div class="image-container">
+                    <img src="Recursos/img/ayuda-card.jpg" alt="">
+                </div>
+                <div class="txt-container">
+                    <h1>???</h1>
+                    <p>???</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <img src="Recursos/img/Logo.png" class="img-footer">
+    <p>Equipo JAIMe proyecto Hackathon</p>
+</footer>
+<script src="Scripts/InfoGame.js"></script>
+<script src="Scripts/menut.js"></script>
+</html>
