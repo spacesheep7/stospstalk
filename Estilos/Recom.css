@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    min-width: 825px;
+}
+
+.R-info{
+    width: 100%;
+    height: 90vh;
+    background-color: #ddcef5;
+    text-align: center;
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5vh 2vw;
+    padding: 2.5vh 2.5vw;
+    position: relative;
+    overflow: hidden;
+    color: #34005f;
+    
+}
+
+#R-gradient{
+    background-color: none;
+    background: linear-gradient(to top, #706dad 70%, #8d01ff );
+    box-shadow: 0px 5px 10px #000;
+}
+
+#R-gradient2{
+    background-color: none;
+    background: linear-gradient(to top, #ddcef5, #706dad);
+    box-shadow: 0px 0px 15px #000;
+}
+
+#R-gradient3{
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.103);
+}
+
+
+.R-back {
+    background-attachment: fixed; 
+    min-height: 20vh;
+    position: relative;
+    opacity: 0.7;
+}
+.R-back-gradient {
+    min-height: 0vh;
+}
+
+.R-back:nth-child(7){
+    background-image: url(../Recursos/img/FONDO2.jpg);
+}
+.R-back:nth-child(5){
+    background-image: url(../Recursos/img/FONDO3.jpg);
+}
+
+.R-back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: 0; 
+}
+
+.text-container {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: left   ;
+    justify-content: center;
+    padding: 0px 3em;
+    margin-left: 5em;
+}
+
+#R-gradient .text-container h1 {
+    text-shadow: 2px 2px  #dbdbdb;
+}
+
+#R-gradient2 .text-container h1 {
+    text-shadow: 2px 2px  #ffffff;
+}
+
+#R-gradient2 .text-container {
+    margin-right: 5em;
+    margin-left: 0;
+}
+
+.text-container h1 {
+    text-shadow: 2px 2px #ffffff;
+    margin-bottom: 2em;
+    font-size: 2rem;
+}
+
+.text-container ul li ul li {
+    margin-left: 2em;
+}
+
+.text-container > p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 700;
+}
+.text-container > ul {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.image-container{
+    height: 20em;
+    width: 20em;
+    justify-self: center;
+    background-size: cover;
+    align-self: center;
+}
+
+#img-side-1{
+    background-image: url(../Recursos/img/R-Seguridad.png);
+}
+
+#img-side-2{
+    background-image: url(../Recursos/img/R-Legales.png);
+}
+
+#img-side-3{
+    background-image: url(../Recursos/img/R-Recomendaciones.png);
+}
+@media only screen and (max-width: 767px) {
+    body{
+     min-width: auto;
+    }
+    .text-container{
+        margin-left: 0;
+        display: block;
+    }
+    .R-info{
+        display: block;
+        height: auto;
+    }
+ }
